@@ -5,7 +5,7 @@
 {% block body %}
     <h1 class="display-4">{{ article.titre }}</h1>
     <p class="text-muted mb-4 pb-2 border-bottom">
-        Par <strong class="text-dark">{{ article.auteur }}</strong> 
+        Par <strong class="text-dark">{{ article.auteur }}</strong>  de categorie <strong class="text-dark">{{article.categorie.nom}}</strong> 
         — {{ article.dateCreation|date('d/m/Y à H:i') }}
         {% if article.publie %}
             <span class="badge bg-success ms-2">✅ Publié</span>
